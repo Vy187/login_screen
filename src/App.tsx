@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Login      from './components/Login';
+import useState   from 'react';
 
 const App = () => {
   return (
     <>
-    <main>hello</main>
+      <Login />
     </>
   )
 }
