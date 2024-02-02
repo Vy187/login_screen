@@ -4,6 +4,7 @@ const Login = () => {
     const content = (
         <main className="full-screen-container">
             <section className="login-container">
+                <h1 className="login-title">Welcome</h1>
                 <form className="form">
                     <fieldset className="input-group">
                         <label htmlFor="email">Email</label>
