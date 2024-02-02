@@ -1,10 +1,26 @@
+:root {
+    --primary-hsl       : 200, 100%, 50%;
+    --primary-light-hsl : 200, 100%, 91%;
+    --primary-dark-hsl  : 200, 100%, 6%;
+}
+
 .full-screen-container {
-    background-image: url('./background-image.jpg');
-    height: 100vh;
-    width: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image    : url('./background-image.jpg');
+    height              : 100vh;
+    width               : 100vh;
+    background-size     : cover;
+    background-position : center;
+    display             : flex;
+    justify-content     : center;
+    align-items         : center;
+}
+
+.login-container {
+    --color : hsl(var(--primary-dark-hsl), .7);
+    background-color: var(--color);
+    box-shadow: 0 0 15px 0 var(--color);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
 }
