@@ -1,3 +1,5 @@
+import './styles.css';
+
 const Login = () => {
     const content = (
         <main className="full-screen-container">
