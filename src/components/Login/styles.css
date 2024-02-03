@@ -2,6 +2,8 @@
     --primary-hsl       : 200, 100%, 50%;
     --primary-light-hsl : 200, 100%, 91%;
     --primary-dark-hsl  : 200, 100%, 6%;
+    --success-hsl       : 100, 60%, 50%;
+    --error-hsl         : 0, 60%, 50%;
 }
 
 .full-screen-container {
@@ -61,4 +63,26 @@
 
 .input-group input:focus {
     box-shadow: 0 0 0 1px hsl(var(--primary-hsl));
+}
+
+.input-group .message {
+    display     : none;
+    font-size   : .75rem;
+}
+
+.login-button {
+    padding         : .5em 1em;
+    font-size       : 1.5rem;
+    font-weight     : lighter;
+    color           : white;
+    background-color: hsl(var(--primary-hsl), .25);
+    border          : 1px solid hsl(var(--primary-hsl));
+    border-radius   : .25em;
+    outline         : none;
+    cursor          : pointer;
+}
+
+.login-button:hover,
+.login-button:focus {
+    background-color: hsl(var(--primary-hsl), .4);
 }
